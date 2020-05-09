@@ -39,3 +39,7 @@ def print_formatted(number):
         hexa=(hex(i)[2:]).upper()
         bina=bin(i)[2:]
         print(deci.rjust(width),octa.rjust(width),hexa.rjust(width),bina.rjust(width))
+        
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)
