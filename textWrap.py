@@ -1,0 +1,16 @@
+'''
+
+Input
+abcd....xyz
+4
+
+Output
+abcd
+efgh
+.
+.
+.
+xyz'''
+
+def wrap(string, max_width):
+    return "\n".join([string[i:i+max_width] for i in range(0, len(string), max_width)])
